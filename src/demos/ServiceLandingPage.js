@@ -19,10 +19,10 @@ export default () => {
       <Hero />
       <FeatureStats/>
       <Features 
-        heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
+        heading={<>Solutions for Hospitals<HighlightedText></HighlightedText></>}
       />
       <Testimonial 
-        heading={<>Our Clients <HighlightedText>Love Us</HighlightedText></>}
+        heading={<>Testimonials<HighlightedText></HighlightedText></>}
       />
       <Blog
         subheading="Blog"
@@ -30,8 +30,8 @@ export default () => {
       />
       <TwoColContactUsWithIllustration/>
       </AnimationRevealPage>
-      <Footer />  
     <SubscribeNewsLetterForm/>
+    <Footer />  
     </div>
   );
 }

@@ -58,7 +58,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({ cards = null, heading = "Amazing Features", subheading = "Services", description = "We design and redesign emergency departments and improve their efficiency by implementing global design standards." }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -70,14 +70,38 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Redesign ER",
+      description:
+        "Streamlining ER processes \n Ambulance processes \n Perfecting the Code \n Administrator training",
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+      imageSrc: SupportIconImage,
+      title: "Design ER",
+      description:
+        "Design ER from the scratch\nAmbulance processes\nPerfecting the Code",
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Staff training",
+      description: "BLS\nAdvanced airway management\nClinical pathways ",
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Ambulance",
+      description:
+        "Stocking of ambulance\n Streamlining process\nAuditing ambulance transport",
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Patient Safety",
+      description: "Patient safety \n Staff training\nSafety Measures Audit",
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Admin Training",
+      description:
+        "Patient safety infrastructure \n Staff training\nSafety Measures Audit",
+    },
   ];
 
   if (!cards) cards = defaultCards;
@@ -98,7 +122,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description || "We design and redesign emergency departments and improve their efficiency by implementing global design standards"}
                 </p>
               </span>
             </Card>
